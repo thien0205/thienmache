@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ - Danh Sách Trang Con</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #05386b 55%, #0ea5e9 100%);
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 32px 16px;
+        }
+
+        .home-wrapper {
+            width: 100%;
+            max-width: 780px;
+        }
+
+        .home-header {
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .home-header h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        .home-header p {
+            color: #cbd5e1;
+            font-size: 1rem;
+        }
+
+        .page-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+
+        .page-card {
+            display: block;
+            text-decoration: none;
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.22);
+            border-radius: 14px;
+            padding: 24px;
+            transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .page-card:hover {
+            transform: translateY(-4px);
+            background: rgba(255, 255, 255, 0.18);
+            border-color: #38bdf8;
+        }
+
+        .page-card h2 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            color: #7dd3fc;
+        }
+
+        .page-card p {
+            font-size: 0.92rem;
+            color: #e2e8f0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="home-wrapper">
+        <header class="home-header">
+            <h1>Trang Chủ</h1>
+            <p>Chọn một trang con bên dưới để mở</p>
+        </header>
+
+        <nav class="page-links" aria-label="Danh sách trang con">
+            <!-- Link tới trang con 1: CV -->
+            <a href="pages/cv.html" class="page-card">
+                <h2>CV Cá Nhân</h2>
+                <p>Xem thông tin cá nhân, học vấn, kỹ năng và dự án.</p>
+            </a>
+
+            <!-- Link tới trang con 2: Hồ bơi -->
+            <a href="pages/hoboi.html" class="page-card">
+                <h2>Hồ Bơi & Sinh Vật Biển</h2>
+                <p>Xem không gian đại dương với các nhân vật bơi qua lại và tự quay đầu.</p>
+            </a>
+        </nav>
+    </div>
+</body>
+</html>
