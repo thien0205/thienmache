@@ -1,8 +1,36 @@
+* {
+    box-sizing: border-box;
+}
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #1ca3ec;
+    overflow: hidden;
 }
+
+#hoboi {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, #1ca3ec 0%, #0d6efd 35%, #05386b 85%, #02182b 100%);
+    overflow: hidden;
+}
+
+#hoboi img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    will-change: transform;
+}
+
+
+#shark { width: 220px; z-index: 3; }
+#turtle { width: 170px; z-index: 3; }
+#faintSchool { width: 280px; opacity: 0.85; z-index: 2; }
+#goldFishSchool { width: 250px; z-index: 3; }
+#men1 { width: 160px; z-index: 4; }
+#men2 { width: 110px; opacity: 0.9; z-index: 2; }
+#men3 { width: 150px; z-index: 4; }
